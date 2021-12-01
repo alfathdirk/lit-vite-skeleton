@@ -1,0 +1,17 @@
+{
+  "name": "skaleup-lit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@xlit/router": "^0.1.9",
+    "lit": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.2",
+    "vite": "^2.6.2"
+  }
+}
