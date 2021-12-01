@@ -7,7 +7,9 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@xlit/router": "^0.1.9",
+    "@vaadin/router": "^1.7.4",
+    "@xlit/di": "^0.1.9",
+    "axios": "^0.24.0",
     "lit": "^2.0.0"
   },
   "devDependencies": {

@@ -1,10 +1,32 @@
-import { Router, template, component } from '@xlit/router';
+const routes = [
+  {
+    path: '/',
+    component: 'x-home',
+    action: async () => {
+      await import('./screens/home/home');
+    },
+  },
+  {
+    path: '/help',
+    component: 'x-help',
+    action: async () => {
+      await import('./screens/help/help');
+    },
+  },
+  {
+    path: '/about',
+    component: 'x-about',
+    action: async () => {
+      await import('./screens/about/about');
+    },
+  },
+  {
+    path: '/login',
+    component: 'x-login',
+    action: async () => {
+      await import('./screens/login/login');
+    },
+  }
+];
 
-const router = new Router(document.getElementById('outlet') as HTMLElement)
-  .use(async (ctx: any, next: any) => {
-    await next();
-  })
-  .route('/', component('x-app', () => import('./home')))
-  .route('/help', component('x-help', () => import('./help')))
-
-export default router;
+export default routes;

@@ -17,10 +17,42 @@
   "resolved" "https://registry.npmjs.org/@types/trusted-types/-/trusted-types-2.0.2.tgz"
   "version" "2.0.2"
 
+"@vaadin/router@^1.7.4":
+  "integrity" "sha512-B4JVtzFVUMlsjuJHNXEMfNZrM4QDrdeOMc6EEigiHYxwF82py6yDdP6SWP0aPoP3f6aQHt51tLWdXSpkKpWf7A=="
+  "resolved" "https://registry.npmjs.org/@vaadin/router/-/router-1.7.4.tgz"
+  "version" "1.7.4"
+  dependencies:
+    "@vaadin/vaadin-usage-statistics" "^2.1.0"
+    "path-to-regexp" "2.4.0"
+
+"@vaadin/vaadin-development-mode-detector@^2.0.0":
+  "integrity" "sha512-S+PaFrZpK8uBIOnIHxjntTrgumd5ztuCnZww96ydGKXgo9whXfZsbMwDuD/102a/IuPUMyF+dh/n3PbWzJ6igA=="
+  "resolved" "https://registry.npmjs.org/@vaadin/vaadin-development-mode-detector/-/vaadin-development-mode-detector-2.0.4.tgz"
+  "version" "2.0.4"
+
+"@vaadin/vaadin-usage-statistics@^2.1.0":
+  "integrity" "sha512-e81nbqY5zsaYhLJuOVkJkB/Um1pGK5POIqIlTNhUfjeoyGaJ63tiX8+D5n6F+GgVxUTLUarsKa6SKRcQel0AzA=="
+  "resolved" "https://registry.npmjs.org/@vaadin/vaadin-usage-statistics/-/vaadin-usage-statistics-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "@vaadin/vaadin-development-mode-detector" "^2.0.0"
+
+"@xlit/di@^0.1.9":
+  "integrity" "sha512-oDnU0JPdhaIy+hnnfC3D9MUULC/Li7STzicuriwROZQrt8S9PLXitSj3A4SbFzdru+U8z+H9PQ5aYx3u1HvCXQ=="
+  "resolved" "https://registry.npmjs.org/@xlit/di/-/di-0.1.9.tgz"
+  "version" "0.1.9"
+
 "@xlit/router@^0.1.9":
   "integrity" "sha512-PdWP8lG4cbntxQ3OoJ1jvvw6ryIvDxB6mxF4Mlf8Tc4/fyKuxuPkkjS1BbQ+LWKzbK5JLjTIEAF12DodsP/Xhw=="
   "resolved" "https://registry.npmjs.org/@xlit/router/-/router-0.1.9.tgz"
   "version" "0.1.9"
+
+"axios@^0.24.0":
+  "integrity" "sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA=="
+  "resolved" "https://registry.npmjs.org/axios/-/axios-0.24.0.tgz"
+  "version" "0.24.0"
+  dependencies:
+    "follow-redirects" "^1.14.4"
 
 "esbuild-darwin-64@0.13.15":
   "integrity" "sha512-ihOQRGs2yyp7t5bArCwnvn2Atr6X4axqPpEdCFPVp7iUj4cVSdisgvEKdNR7yH3JDjW6aQDw40iQFoTqejqxvQ=="
@@ -49,6 +81,11 @@
     "esbuild-windows-32" "0.13.15"
     "esbuild-windows-64" "0.13.15"
     "esbuild-windows-arm64" "0.13.15"
+
+"follow-redirects@^1.14.4":
+  "integrity" "sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA=="
+  "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.5.tgz"
+  "version" "1.14.5"
 
 "fsevents@~2.3.2":
   "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
@@ -107,6 +144,11 @@
   "integrity" "sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw=="
   "resolved" "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz"
   "version" "1.0.7"
+
+"path-to-regexp@2.4.0":
+  "integrity" "sha512-G6zHoVqC6GGTQkZwF4lkuEyMbVOjoBKAEybQUypI1WTkqinCOrq2x6U2+phkJ1XsEMTy4LjtwPI7HW+NVrRR2w=="
+  "resolved" "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-2.4.0.tgz"
+  "version" "2.4.0"
 
 "picocolors@^1.0.0":
   "integrity" "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ=="

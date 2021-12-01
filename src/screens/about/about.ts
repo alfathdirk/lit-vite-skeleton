@@ -1,11 +1,16 @@
 import {LitElement, html, css} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 
-@customElement('x-help')
-export class LitApp extends LitElement {
+@customElement('x-about')
+export class About extends LitElement {
     @property() name = 'Skaleup Lit';
 
+
+    createRenderRoot (): Element {
+      return this;
+    }
+
     render() {
-      return html`<h1>Help</h1>`;
+      return html`<h1>Avoyt</h1>`;
     }
 }
