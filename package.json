@@ -4,16 +4,28 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@vaadin/router": "^1.7.4",
     "@xlit/di": "^0.1.9",
     "axios": "^0.24.0",
-    "lit": "^2.0.0"
+    "lit": "^2.0.0",
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "bootstrap": "4.6.0",
+    "chart.js": "2.9.4",
+    "datatables.net-bs4": "1.10.24",
+    "jquery": "3.6.0",
+    "jquery.easing": "^1.4.1"
   },
   "devDependencies": {
     "@types/node": "^16.10.2",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "eslint": "^8.3.0",
+    "eslint-config-xinix": "^1.2.1",
+    "eslint-plugin-lit": "^1.6.1",
+    "eslint-plugin-wc": "^1.3.2",
     "vite": "^2.6.2"
   }
 }

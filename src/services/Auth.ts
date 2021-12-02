@@ -1,9 +1,6 @@
 import { createEvent } from '../lib/event';
 import axios from 'axios';
 
-interface Claims {
-  subject: string;
-}
 
 interface Credential {
   username: string;
@@ -15,7 +12,6 @@ interface TokenCredential {
 }
 
 export class AuthService {
-  claims!: Claims;
 
   constructor (private target: EventTarget, private http: any, public token?: string) {}
 
