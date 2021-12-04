@@ -12,6 +12,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'jquery.easing/jquery.easing.min.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './assets/css/sb-admin-2.min.css';
+import './assets/css/global.css';
+
 @customElement('x-app')
 export class App extends container()(LitElement) {
 
@@ -59,9 +61,19 @@ export class App extends container()(LitElement) {
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="/help">
+                <a class="nav-link" href="/">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Users</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/help">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Industries</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/help">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Banner</span></a>
             </li>
             <hr class="sidebar-divider d-none d-md-block">
 
