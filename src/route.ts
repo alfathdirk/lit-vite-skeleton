@@ -1,16 +1,16 @@
 const routes = [
   {
     path: '/',
-    component: 'x-home',
+    component: 'x-dashboard',
     action: async () => {
-      await import('./screens/home/home');
+      await import('./screens/dashboard/dashboard');
     },
   },
   {
-    path: '/help',
-    component: 'x-help',
+    path: '/home',
+    component: 'x-home',
     action: async () => {
-      await import('./screens/help/help');
+      await import('./screens/home/home');
     },
   },
   {

@@ -12,11 +12,6 @@
     "@vaadin/router": "^1.7.4",
     "@xlit/di": "^0.1.9",
     "axios": "^0.24.0",
-    "bootstrap": "4.6.0",
-    "chart.js": "2.9.4",
-    "datatables.net-bs4": "1.10.24",
-    "jquery": "3.6.0",
-    "jquery.easing": "^1.4.1",
     "lit": "^2.0.0"
   },
   "devDependencies": {

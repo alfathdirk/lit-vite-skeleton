@@ -2,6 +2,7 @@ import {LitElement, html} from 'lit';
 import {customElement, property, state} from 'lit/decorators.js';
 import fetchData from '../../lib/fetch';
 import '../../components/dataTable';
+import { XView } from '../../XView';
 interface IPagination {
   limit?: number;
   next?: boolean;
@@ -11,7 +12,7 @@ interface IPagination {
   page?: number;
 }
 @customElement('x-home')
-export class Home extends LitElement {
+export class Home extends XView {
     @state() data = {};
     @state() page = 1;
     @state() limit = 10;
@@ -46,16 +47,23 @@ export class Home extends LitElement {
 
     actions = {
       detail: {
-        onPress: (s) => this.doSome(s),
+        onPress: (s: any) => this.doSome(s),
         icon: html`<i class="fas fa-fw fa-table"></i>`
       },
       details: {
-        onPress: (s) => this.doSome(s),
+        onPress: (s: any) => this.doSome(s),
         icon: html`<i class="fas fa-fw fa-table"></i>`
       }
     }
 
-    doSome(s) {
+    constructor() {
+      super();
+      this.addEventListener('view-connected', () => {
+        this.getData();
+      })
+    }
+
+    doSome(s: any) {
       console.log(s);
     }
 
@@ -68,11 +76,6 @@ export class Home extends LitElement {
       this.data = data;
     }
 
-    connectedCallback() {
-      super.connectedCallback();
-      this.getData();
-    }
-
     changePages(page: number) {
       this.page = page;
       this.getData()
@@ -81,8 +84,19 @@ export class Home extends LitElement {
 
     render() {
       return html`
-        <div class="card shadow mb-4">
-          <x-data-table .data="${this.data}" .changePage="${this.changePages.bind(this)}" .page="${this.page}" .columns="${this.columns}" .actions="${this.actions}"></x-data-table>
+        <div class="row">
+          <div class="col-12">
+            <div class="card my-4">
+              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                  <h6 class="text-white text-capitalize ps-3">User Questioner</h6>
+                </div>
+              </div>
+              <div class="card-body px-0 pb-2 m-2">
+                <x-data-table .data="${this.data}" .changePage="${this.changePages.bind(this)}" .page="${this.page}" .columns="${this.columns}" .actions="${this.actions}"></x-data-table>
+              </div>
+            </div>
+          </div>
         </div>
       `;
     }

@@ -1,6 +1,5 @@
 import { createEvent } from '../lib/event';
-import axios from 'axios';
-
+import fetchData from '../lib/fetch';
 
 interface Credential {
   username: string;
@@ -13,14 +12,17 @@ interface TokenCredential {
 
 export class AuthService {
 
-  constructor (private target: EventTarget, private http: any, public token?: string) {}
+  constructor (private target: EventTarget, public token?: string) {}
 
   loggedIn (): boolean {
     return Boolean(this.token);
   }
 
   async login (body: Credential): Promise<void> {
-    // this.token = token;
+    // fetchData()
+    console.log('here login');
+    let token = 'asdf';
+    this.token = token;
     this.target.dispatchEvent(createEvent('auth-changed', this));
   }
 
