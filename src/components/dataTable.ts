@@ -12,17 +12,13 @@ interface IPagination {
 
 @customElement('x-data-table')
 export class DataTable extends LitElement {
-    @property() data: any = {};
+    @state() data: any = {};
     @property({ type: Number }) page = 1;
     @property() changePage = (val: number) => {};
     @property({ type: Array }) columns: any = [];
     @property() actions: any = undefined;
     // @property() page = 1;
     // @state() pagination: IPagination = this.data.pagination;
-
-    connectedCallback() {
-      super.connectedCallback();
-    }
 
     createRenderRoot (): Element {
       return this;
