@@ -1,0 +1,15 @@
+version: '3'
+services:
+  skaleup:
+    build: .
+    ports:
+      - 4000:3001
+    networks:
+      - dockerize_default
+    labels:
+      - "traefik.http.routers.skaleup.rule=PathPrefix(`/webowebo`)"
+      - traefik.port=3001
+
+networks:
+  dockerize_default:
+    external: true

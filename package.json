@@ -5,14 +5,17 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "lint": "eslint ."
+    "build": "vite build",
+    "lint": "eslint .",
+    "start": "serve -l tcp://0.0.0.0:3001 -s dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
     "@vaadin/router": "^1.7.4",
     "@xlit/di": "^0.1.9",
     "axios": "^0.24.0",
-    "lit": "^2.0.0"
+    "lit": "^2.0.0",
+    "serve": "^13.0.2"
   },
   "devDependencies": {
     "@types/node": "^16.10.2",
